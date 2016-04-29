@@ -5,10 +5,10 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc -p src",
-    "clean": "rimraf lib docs test/*.js test/*.map test/*.d.ts",
+    "clean": "rimraf lib docs test/build",
     "docs": "typedoc --mode file --readme src/index.md --out docs --target es6 src",
-    "lint": "tslint  -c conf/tslint.json src/*.ts test/*.ts",
-    "test": "tsc -p src && tsc -p test && mocha"
+    "lint": "tslint  -c conf/tslint.json src/*.ts test/src/*.ts",
+    "test": "tsc -p src && tsc -p test/src && mocha test/build"
   },
   "repository": {
     "type": "git",
