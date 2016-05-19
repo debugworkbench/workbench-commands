@@ -16,6 +16,6 @@
     ],
     "files": [
         "../../typings/main.d.ts",
-        "./command.test.ts"
+        "command.test.ts"
     ]
 }
