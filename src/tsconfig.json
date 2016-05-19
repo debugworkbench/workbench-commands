@@ -17,6 +17,7 @@
     "files": [
         "./command.ts",
         "./command_table.ts",
+        "./menu_definition.ts",
         "./index.ts",
         "./output_record.ts"
     ]

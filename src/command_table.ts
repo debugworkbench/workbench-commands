@@ -1,4 +1,5 @@
 import { Command } from "./command";
+import { MenuDefinition} from "./menu_definition";
 
 /**
  * Information about a command in a command table.
@@ -26,6 +27,8 @@ export class CommandTable {
   private inherit: CommandTable[] = [];
   /** Commands in this table. */
   private commands: CommandTableEntry[] = [];
+  /** Menu description. */
+  menuDefinition: MenuDefinition;
 
   constructor (name: string, inherit: CommandTable[]) {
     this.name = name;
